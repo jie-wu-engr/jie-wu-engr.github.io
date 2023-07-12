@@ -1,0 +1,10 @@
+		<script src="{{ path_to_root }}jquery.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = './' + $(this).data('include') + '.html'
+			$(this).load(file)
+		  })
+		})
+		</script>
